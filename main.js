@@ -1,4 +1,4 @@
-let Clicks = 1e5;
+let Clicks = 0;
 let OnClick = 1;
 let Level = 1;
 let NextLevelClicks = 1e4;

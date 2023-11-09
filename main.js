@@ -1,4 +1,4 @@
-let Money = new Decimal(2e9);
+let Money = new Decimal(0);
 let OnClick = new Decimal(0.05);
 let Level = new Decimal(1);
 let NextLevelClicks = new Decimal(1e4);

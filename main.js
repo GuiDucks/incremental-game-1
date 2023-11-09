@@ -54,7 +54,7 @@ function AddClicks() {
 function Upgrade(Cost, amt, IDEN) {
     if (Money.gte(Cost) && document.getElementById(IDEN).textContent !== "Bought") {
         if (IDEN === 'Upgrade7') {
-            document.getElementById('LevelText').textContent = "Level 1 (x1 clicks). Next level at 1e4 Clicks";
+            document.getElementById('LevelText').textContent = "Level 1 (x1 clicks). Next level at $1e4";
         }
         if (IDEN === 'Upgrade9' || IDEN == "Upgrade12" || IDEN == "Upgrade16") {
             LevelExponent = LevelExponent.add(amt);

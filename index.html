@@ -5,21 +5,67 @@
     <title>Incremental</title>
 </head>
 <body>
+    <h1 class="MoneyText"><div id="ClicksText">Money: 0 ($1/tick)</div></h1>
     <h1>Basic Incremental</h1>
     <p><h3>This is my first web incremental game so its a piece of garbage but hey u gotta start somewhere</p></h3>
-    <button onclick="AddClicks()"><div id="ClickButton">Click for +1</div></button>
-    <h3><div id="ClicksText">Clicks: 0</div></h3>
-    <button onclick="Upgrade(10,1,'Upgrade1')"><div id='Upgrade1'>+1 Clicks; 10 Clicks </button></div> <br>
-    <button onclick="Upgrade(50,2,'Upgrade2')"><div id='Upgrade2'>+2 Clicks; 50 Clicks </button></div><br>
-    <button onclick="Upgrade(250,4,'Upgrade3')"><div id='Upgrade3'>+5 Clicks; 250 Clicks </button></div><br>
-    <button onclick="Upgrade(1e3,10,'Upgrade4')"><div id='Upgrade4'>+10 Clicks; 1e3 Clicks </button></div><br>
-    <button onclick="Upgrade(4e3,20,'Upgrade5')"><div id='Upgrade5'>+20 Clicks; 4e3 Clicks </button></div><br>
-    <button onclick="Upgrade(6e3,50,'Upgrade6')"><div id='Upgrade6'>+50 Clicks; 6e3 Clicks </button></div><br>
-    <button onclick="Upgrade(2e4,0,'Upgrade7')"><div id='Upgrade7'>Unlock Levels;2e4 Clicks</button></div><br>
-    <h2><div id = "LevelText"> </div></h2>
-    <button onclick="Upgrade(1e5,120,'Upgrade8')"><div id='Upgrade8'>+125 Clicks; 1e5 Clicks </button></div><br>
-    <button onclick="Upgrade(8e5,375,'Upgrade9')"><div id='Upgrade9'>+375 Clicks; 8e5 Clicks </button></div><br>
+    <button class="Upgrade" onclick="Upgrade(20,2,'Upgrade1')">
+        <div id="Upgrade1">x2 Money; $20</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade(50,2,'Upgrade2')">
+        <div id="Upgrade2">x2 Money again; $50</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('100',2.5,'Upgrade3')">
+        <div id="Upgrade3">x2.5 Money again; $100</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('400',2.3,'Upgrade4')">
+        <div id="Upgrade4">x2.3 Money; $400</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.5e3',3,'Upgrade5')">
+        <div id="Upgrade5">x3 Money; $1500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e3',3,'Upgrade6')">
+        <div id="Upgrade6">x2.7 Money; $5000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e4',1,'Upgrade7')">
+        <div id="Upgrade7">Unlock Levels; $1e4</div>
+    </button> <br>
+    <h3 class="LevelText" ><div id = "LevelText"> </div></h2>
+    <button class="Upgrade" onclick="Upgrade('5e4',3.4,'Upgrade8')">
+        <div id="Upgrade8">x3.4 Money; $5e4</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.5e5',0.2,'Upgrade9')">
+        <div id="Upgrade9">+0.2 Money mult per level; $1.5e5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e5',3,'Upgrade10')">
+        <div id="Upgrade10">x3 Money; $3e5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e6',3,'Upgrade11')">
+        <div id="Upgrade11">x4 Money; $1e6</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e7',0.25,'Upgrade12')">
+        <div id="Upgrade12">+0.25 Money mult per level; $4e7</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e8',5,'Upgrade13')">
+        <div id="Upgrade13">x5 Money; $2.5e8</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e10',5,'Upgrade14')">
+        <div id="Upgrade14">x5 Money again; $1e10</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e11',6,'Upgrade15')">
+        <div id="Upgrade15">x6 Money; $4e11</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e13',0.3,'Upgrade16')">
+        <div id="Upgrade16">+0.3 Money mult per level; $2.5e13</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e15',5.4,'Upgrade17')">
+        <div id="Upgrade17">x5.4 Money; $1e15</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e17',7.5,'Upgrade18')">
+        <div id="Upgrade18">x7.5 Money; $1e17</div>
+    </button> <br>
+    <script src="break_eternity.js-master/break_eternity.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </body>
 </html>
 

@@ -37,9 +37,24 @@ h1 {
   position: fixed;
   top: 5;
   left: 50%;
-  top:84%;
-  padding: 10px;
+  top:82%;
+  padding: 15px;
+  height: 1px;
+  width: 700px;
   color: rgb(0,220,220);
+  border-radius: 0.5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.SLevelText {
+  position: fixed;
+  top: 5;
+  left: 50%;
+  top:75%;
+  padding: 15px;
+  height: 1px;
+  width: 700px;
+  color: rgb(121, 0, 220);
   border-radius: 0.5rem;
   text-align: center;
   transform: translate(-50%, -50%);

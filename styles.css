@@ -72,6 +72,19 @@ h1 {
   text-align: center;
   transform: translate(-50%, -50%);
 }
+.SEnergyText {
+  position: fixed;
+  top: 5;
+  left: 50%;
+  top:65%;
+  padding: 15px;
+  height: 1px;
+  width: 700px;
+  color: rgb(255,0,0);
+  border-radius: 0.5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
 .Upgrade {
   font-family: 'Consolas', Courier, monospace;
   font-weight: 900;

@@ -46,9 +46,6 @@ window.onload = function() {
     loadGameData();
     Loop();
 };
-function clearGameData() {
-    localStorage.clear();
-}
 function pow10(val,tier = null) {
     if (tier !== null) {
         return val.pow(10);

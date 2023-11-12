@@ -1,4 +1,4 @@
-let UpgradeAmt = 130;
+let UpgradeAmt = 209;
 let Money = new Decimal('0');
 let TotalMoney = new Decimal('0')
 let Energy = new Decimal('0');
@@ -27,8 +27,7 @@ let SEnergyMult = new Decimal(1);
 let SEnergyExpo = new Decimal(2);
 let SEnergyEMult = new Decimal(1);
 let SEnergyEBoost = new Decimal(1);
-let SenergyEExpo = new Decimal(0.007);
-// ENDGAME: e34500 and 1e342 Energy
+let SenergyEExpo = new Decimal(0.0045);
 function loadGameData() {
     Money = new Decimal(localStorage.getItem('Money')) || new Decimal('0');
     TotalMoney = Money
@@ -41,16 +40,16 @@ function saveGameData() {
     localStorage.setItem('Energy', Energy.toString());
     localStorage.setItem('SEnergy', SEnergy.toString());
 }
-
 window.onload = function() {
     loadGameData();
     Loop();
 };
-function pow10(val,tier = null) {
-    if (tier !== null) {
-        return val.pow(10);
+function pow10(vall,tier = null) {
+    const val = new Decimal(vall);
+    if (tier == null) {
+        return new Decimal('10').pow(vall);
     } else {
-        return val.pow(Decimal.tetrate(10,tier))
+        return (Decimal.tetrate(10,tier)).pow(val)
     }
 }
 setInterval(saveGameData, 5000);
@@ -69,7 +68,7 @@ function RoundNum(Val) {
 function Format(Val) {
     const valDecimal = new Decimal(Val);
     if (valDecimal.gte('1e1000000')) {
-        return "e" + Format(getBaseLog(valDecimal,10))
+        return "e" + Format(getBaseLog(10,valDecimal))
     } else if (valDecimal.gte('1e1000')) {
         const parts = valDecimal.toExponential(0).split('e');
         const coefficient = parts[0] === "10" ? "1" : parts[0];
@@ -106,14 +105,17 @@ function CalculateSLevel() {
     SLevel = getBaseLog(SLevelScaling,getBaseLog(10,Money).div(58)).add(2).floor();
     NextSLevelMoney = ten.pow(new Decimal(58).times(SLevelScaling.pow(SLevel.sub(1))));
     SLevelMult = SLevelExponent.pow(SLevel.sub(1));
-    document.getElementById('SLevelText').textContent = "Super Level " + Format(SLevel) + " (x" + Format(SLevelMult) + " money). Next Slevel at $" + Format(NextSLevelMoney);
+    document.getElementById('SLevelText').textContent = "Super Level " + Format(SLevel) + " (x" + Format(SLevelMult) + " money).";
+    if (SLevel.lt(100000)) {
+        document.getElementById('SLevelText').textContent = document.getElementById('SLevelText').textContent + " Next Slevel at $" + Format(NextSLevelMoney);
+    }
 }
 function AddClicks() {
     Money = Money.add(OnClick.times(LevelMult.times(SLevelMult.times(SelfMoneyBoost.times(EnergyMonMult)))));
     TotalMoney = TotalMoney.add(OnClick.times(LevelMult.times(SLevelMult.times(SelfMoneyBoost.times(EnergyMonMult)))));
     document.getElementById("ClicksText").textContent = "$" + Format(Money);
     if (Money.lt('1e100000')) {
-        document.getElementById("ClicksText").textContent = document.getElementById("ClicksText").textContent  + " (" + Format(OnClick.times(LevelMult.times(100).times(SLevelMult.times(SelfMoneyBoost.times(EnergyMonMult))))) + "/s)";
+        document.getElementById("ClicksText").textContent = document.getElementById("ClicksText").textContent  + " (" + Format(OnClick.times(LevelMult.times(70).times(SLevelMult.times(SelfMoneyBoost.times(EnergyMonMult))))) + "/s)";
     }
     if (document.getElementById('Upgrade7').textContent == "Bought" && Money.gte(NextLevelClicks)) {
        CalculateLevel();
@@ -127,7 +129,7 @@ function AddClicks() {
         document.getElementById('EnergyText').textContent = "Energy: " + Format(Energy) + " (x" + Format(EnergyMonMult) + " Money)"
     }
     if (document.getElementById('Upgrade131').textContent == "Bought") {
-        SEnergy = SEnergy.add(SEnergyMult);
+        SEnergy = SEnergy.add(SEnergyMult.times(SEnergyEBoost));
         SEnergyEMult = SEnergy.pow(SEnergyExpo);
         document.getElementById('SEnergyText').textContent = "Super Energy: " + Format(SEnergy) + " (x" + Format(SEnergyEMult) + " Energy)"
     }
@@ -141,9 +143,19 @@ function AddClicks() {
     } else {
         MonEnergyMult = 1;
     }
+    if (document.getElementById('Upgrade142').textContent !== "S Energy receives a multiplier based on energy; $1e285000" && Energy.gte("1e2600")) {
+        SEnergyEBoost = (Energy.div("1e2500")).pow(SenergyEExpo);
+        document.getElementById('Upgrade142').textContent = "Currently: x" + Format(SEnergyEBoost);
+    } else {
+        SEnergyEBoost = 1;
+    }
 }
 
-function Upgrade(Cost, amt, IDEN, UpgType = 0) {
+function Upgrade(Costt, amt, IDEN, UpgType = 0,tier = 0) {
+    let Cost = new Decimal(Costt);
+    if (tier >= 0.5) {
+        Cost = pow10(Costt,tier);
+    }
     if (Money.gte(Cost) && document.getElementById(IDEN).textContent !== "Bought") {
         if (IDEN === 'Upgrade7') {
             document.getElementById('LevelText').textContent = "Level 1 (x1 Money). Next level at $1e4";
@@ -175,6 +187,8 @@ function Upgrade(Cost, amt, IDEN, UpgType = 0) {
             SEnergyMult = SEnergyMult.add(amt);
         } else if(UpgType === 8) {
             SEnergyExpo = SEnergyExpo.add(amt);
+        } else if(UpgType === 9) {
+            SenergyEExpo = SenergyEExpo.add(amt);
         } else {
             OnClick = OnClick.times(amt);
         }

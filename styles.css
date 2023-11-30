@@ -37,7 +37,7 @@ h1 {
   position: fixed;
   top: 5;
   left: 50%;
-  top:82%;
+  top:83%;
   padding: 15px;
   height: 1px;
   width: 700px;
@@ -50,7 +50,7 @@ h1 {
   position: fixed;
   top: 5;
   left: 50%;
-  top:75%;
+  top:78%;
   padding: 15px;
   height: 1px;
   width: 700px;
@@ -63,7 +63,7 @@ h1 {
   position: fixed;
   top: 5;
   left: 50%;
-  top:70%;
+  top:73%;
   padding: 15px;
   height: 1px;
   width: 700px;
@@ -76,11 +76,37 @@ h1 {
   position: fixed;
   top: 5;
   left: 50%;
-  top:65%;
+  top:68%;
   padding: 15px;
   height: 1px;
   width: 700px;
   color: rgb(255,0,0);
+  border-radius: 0.5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.ULText {
+  position: fixed;
+  top: 5;
+  left: 50%;
+  top:63%;
+  padding: 15px;
+  height: 1px;
+  width: 700px;
+  color: rgb(0, 155, 0);
+  border-radius: 0.5rem;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.MLText {
+  position: fixed;
+  top: 5;
+  left: 50%;
+  top:58%;
+  padding: 15px;
+  height: 1px;
+  width: 700px;
+  color: rgb(111, 113, 248);
   border-radius: 0.5rem;
   text-align: center;
   transform: translate(-50%, -50%);

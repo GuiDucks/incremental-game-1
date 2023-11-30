@@ -7,14 +7,13 @@
 <body>
     <h1 class="MoneyText"><div id="ClicksText">Money: 0 (1/s)</div></h1>
     <h1>Basic Incremental</h1>
-    <p><h3>This is my first web incremental game so its a piece of garbage but hey u gotta start somewhere</p></h3>
-    <p><h3>Tip: the game stops when you switch tabs however if you leave the game on a second window</p></h3>
-    <p><h3> then the game should still work and you can afk!</h3></p>
     <p><h3>Made by Gui :]</p></h3>
     <h3 class="LevelText" ><div id = "LevelText"> </div></h3>
     <h3 class="SLevelText" ><div id = "SLevelText"> </div></h3>
     <h3 class="EnergyText" ><div id = "EnergyText"> </div></h3>
     <h3 class="SEnergyText" ><div id = "SEnergyText"> </div></h3>
+    <h3 class="ULText" ><div id = "ULText"> </div></h3>
+    <h3 class="MLText" ><div id = "MLText"> </div></h3>
     <button class="Upgrade" onclick="Upgrade(20,2,'Upgrade1')">
         <div id="Upgrade1">x2 Money; $20</div>
     </button> <br>
@@ -22,7 +21,7 @@
         <div id="Upgrade2">x2 Money again; $50</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('100',2.5,'Upgrade3')">
-        <div id="Upgrade3">x2.5 Money again; $100</div>
+        <div id="Upgrade3">x2.5 Money; $100</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('400',2.3,'Upgrade4')">
         <div id="Upgrade4">x2.3 Money; $400</div>
@@ -46,40 +45,40 @@
         <div id="Upgrade10">x3 Money; $300000</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e6',3,'Upgrade11')">
-        <div id="Upgrade11">x4 Money; $1e6</div>
+        <div id="Upgrade11">x4 Money; $1M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('4e7',0.25,'Upgrade12')">
-        <div id="Upgrade12">+0.25 Money mult per level; $4e7</div>
+        <div id="Upgrade12">+0.25 Money mult per level; $40M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.5e8',5,'Upgrade13')">
-        <div id="Upgrade13">x5 Money; $2.5e8</div>
+        <div id="Upgrade13">x5 Money; $250M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e10',5,'Upgrade14')">
-        <div id="Upgrade14">x5 Money again; $1e10</div>
+        <div id="Upgrade14">x5 Money again; $10B</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('4e11',6,'Upgrade15')">
-        <div id="Upgrade15">x6 Money; $4e11</div>
+        <div id="Upgrade15">x6 Money; $400B</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.5e13',0.3,'Upgrade16')">
-        <div id="Upgrade16">+0.3 Money mult per level; $2.5e13</div>
+        <div id="Upgrade16">+0.3 Money mult per level; $25T</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e15',5.4,'Upgrade17')">
-        <div id="Upgrade17">x5.4 Money; $1e15</div>
+        <div id="Upgrade17">x5.4 Money; $1Qd</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e17',7.5,'Upgrade18')">
-        <div id="Upgrade18">x7.5 Money; $1e17</div>
+        <div id="Upgrade18">x7.5 Money; $100Qd</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e19',0.3,'Upgrade19')">
-        <div id="Upgrade19">+0.3 Money mult per level; $1e19</div>
+        <div id="Upgrade19">+0.3 Money mult per level; $10Qn</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e23',10,'Upgrade20')">
-        <div id="Upgrade20">x10 Money; $1e23</div>
+        <div id="Upgrade20">x10 Money; $100Sx</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('5e26',11.5,'Upgrade21')">
-        <div id="Upgrade21">x11.5 Money; $5e26</div>
+        <div id="Upgrade21">x11.5 Money; $500Sp</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e30',10.5,'Upgrade22')">
-        <div id="Upgrade22">x10.5 Money; $1e30</div>
+        <div id="Upgrade22">x10.5 Money; $1No</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e33',0.45,'Upgrade23')">
         <div id="Upgrade23">+0.45 Money mult per level; $1e33</div>
@@ -145,7 +144,7 @@
         <div id="Upgrade43">+1.25 SLevel's MoneyMult Exponent; $1e214</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2e239',1e4,'Upgrade44')">
-        <div id="Upgrade44">x1e4 Money; $2e239</div>
+        <div id="Upgrade44">x10000 Money; $2e239</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3e255',1.1,'Upgrade45',3)">
         <div id="Upgrade45">SLevel scales 1.1x slower; $3e255</div>
@@ -154,7 +153,7 @@
         <div id="Upgrade46">+5 Self Money boost strength (Default: 35); $1e287</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e314',1e5,'Upgrade47')">
-        <div id="Upgrade47">x1e5 Money; $1e314</div>
+        <div id="Upgrade47">x100000 Money; $1e314</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e335',1.1,'Upgrade48',1)">
         <div id="Upgrade48">+1.1 SLevel's MoneyMult Exponent; $1e335</div>
@@ -166,7 +165,7 @@
         <div id="Upgrade50">+5 Self Money boost strength; $5e374</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e418',1e6,'Upgrade51')">
-        <div id="Upgrade51">x1e6 Money; $1e418</div>
+        <div id="Upgrade51">x1M Money; $1e418</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2e448',10,'Upgrade52',2)">
         <div id="Upgrade52">Increase levels until softcap by +10; $2e448</div>
@@ -178,7 +177,7 @@
         <div id="Upgrade54">+2.5 Self Money boost strength; $1e500</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e538',1e10,'Upgrade55')">
-        <div id="Upgrade55">x1e10 Money; $1e538</div>
+        <div id="Upgrade55">x10B Money; $1e538</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e583',0.025,'Upgrade56',4)">
         <div id="Upgrade56">+2.5 Self Money boost strength; $1e583</div>
@@ -190,7 +189,7 @@
         <div id="Upgrade58">+1.15 SLevel's MoneyMult Exponent; $1e673</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3e708',1e11,'Upgrade59')">
-        <div id="Upgrade59">x1e11 Money; $3e708</div>
+        <div id="Upgrade59">x100B Money; $3e708</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e761',0.025,'Upgrade60',4)">
         <div id="Upgrade60">+2.5 Self Money boost strength; $1e761</div>
@@ -199,7 +198,7 @@
         <div id="Upgrade61">SLevel scales 1.05x slower; $1e835</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e877',1e12,'Upgrade62')">
-        <div id="Upgrade62">x1e12 Money; $1e877</div>
+        <div id="Upgrade62">x1T Money; $1e877</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e938',15,'Upgrade63',2)">
         <div id="Upgrade63">Increase levels until softcap by +15; $1e938</div>
@@ -211,7 +210,7 @@
         <div id="Upgrade65">SLevel scales 1.1x slower; $1e1036</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2e1137',1e13,'Upgrade66')">
-        <div id="Upgrade66">x1e13 Money; $2e1137</div>
+        <div id="Upgrade66">x10T Money; $2e1137</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('5e1201',30,'Upgrade67',2)">
         <div id="Upgrade67">Increase levels until softcap by +15; $5e1201</div>
@@ -232,7 +231,7 @@
         <div id="Upgrade72">Adds 1 to Energy's money mult strength (Default: 5); $1e1480</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e1507',1e15,'Upgrade73')">
-        <div id="Upgrade73">x1e15 Money; $1e1507</div>
+        <div id="Upgrade73">x1Qd Money; $1e1507</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e1587',3,'Upgrade74',5)">
         <div id="Upgrade74">x3 Energy; $1e1587</div>
@@ -274,7 +273,7 @@
         <div id="Upgrade86">Adds 2.5 to Energy's money mult strength; $1e2860</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e3400',1e20,'Upgrade87')">
-        <div id="Upgrade87">x1e20 Money; $1e3400</div>
+        <div id="Upgrade87">x100Qn Money; $1e3400</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e3680',10,'Upgrade88',5)">
         <div id="Upgrade88">x10 Energy; $1e3680</div>
@@ -292,7 +291,7 @@
         <div id="Upgrade92">x20 Energy; $1e5100</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e5350',1e30,'Upgrade93')">
-        <div id="Upgrade93">x1e30 Money; $1e5350</div>
+        <div id="Upgrade93">x1No Money; $1e5350</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e5750',70,'Upgrade94',2)">
         <div id="Upgrade94">Increase levels until softcap by +70; $1e5750</div>
@@ -310,7 +309,7 @@
         <div id="Upgrade98">SLevel scales 1.1x slower; $1e10330</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e11350',1e30,'Upgrade99')">
-        <div id="Upgrade99">x1e30 Money; $1e11350</div>
+        <div id="Upgrade99">x1No Money; $1e11350</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e11900',50,'Upgrade100',5)">
         <div id="Upgrade100">x50 Energy; $1e11900</div>
@@ -319,7 +318,7 @@
         <div id="Upgrade101">Increase levels until softcap by +100; $1e12500</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e13670',1,'Upgrade102',6)">
-        <div id="Upgrade102">Adds 1 to Energy's money mult strength; $1e13000</div>
+        <div id="Upgrade102">Adds 1 to Energy's money mult strength; $1e13670</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e16900',1.15,'Upgrade103',1)">
         <div id="Upgrade103">+1.15 SLevel's MoneyMult Exponent; $1e16900</div>
@@ -475,13 +474,13 @@
         <div id="Upgrade153">x30 S Energy; $1e666666</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e696969',1.2,'Upgrade154',3)">
-        <div id="Upgrade154">SLevel scales 1.2x slower; $1e680000</div>
+        <div id="Upgrade154">SLevel scales 1.2x slower; $1e696969</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e740000',1.5,'Upgrade155',1)">
         <div id="Upgrade155">+1.5 SLevel's MoneyMult Exponent; $1e740000</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e775000','1e6','Upgrade156',5)">
-        <div id="Upgrade156">x1e6 Energy; $1e775000</div>
+        <div id="Upgrade156">x1M Energy; $1e775000</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e800000',800,'Upgrade157',2)">
         <div id="Upgrade157">Increase levels until softcap by +800; $1e800000</div>
@@ -493,88 +492,88 @@
         <div id="Upgrade159">Adds 5 to Energy's S Energy's boost; $1e900000</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e1000000','1e500','Upgrade160')">
-        <div id="Upgrade160">x1e500 Money; $e1e6</div>
+        <div id="Upgrade160">x1e500 Money; $e1M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e1120000',0.0022,'Upgrade161',4)">
-        <div id="Upgrade161">+0.22 Self Money boost strength; $e1.12e6</div>
+        <div id="Upgrade161">+0.22 Self Money boost strength; $e1.12M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2e6',1000,'Upgrade162',2,1)">
-        <div id="Upgrade162">Increase levels until softcap by +1000; $e2e6</div>
+        <div id="Upgrade162">Increase levels until softcap by +1000; $e2M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.35e6','1000','Upgrade163',7,1)">
-        <div id="Upgrade163">x1000 S Energy; $e2.35e6</div>
+        <div id="Upgrade163">x1000 S Energy; $e2.35M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.4e6','1e15','Upgrade164',5,1)">
-        <div id="Upgrade164">x1e15 Energy; $e2.4e6</div>
+        <div id="Upgrade164">x1Qd Energy; $e2.4M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.5e6',1.2,'Upgrade165',3,1)">
-        <div id="Upgrade165">SLevel scales 1.2x slower; $e2.5e6</div>
+        <div id="Upgrade165">SLevel scales 1.2x slower; $e2.5M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2.7e6','1e1000','Upgrade166',null,1)">
-        <div id="Upgrade166">x1e1000 Money; $e2.7e6</div>
+        <div id="Upgrade166">x1e1000 Money; $e2.7M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3.1e6',1.5,'Upgrade167',1,1)">
-        <div id="Upgrade167">+1.5 SLevel's MoneyMult Exponent; $e3.1e6</div>
+        <div id="Upgrade167">+1.5 SLevel's MoneyMult Exponent; $e3.1M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3.2e6',1,'Upgrade168',8,1,1)">
-        <div id="Upgrade168">Adds 1 to S Energy's energy mult strength; $e3.2e6</div>
+        <div id="Upgrade168">Adds 1 to S Energy's energy mult strength; $e3.2M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('6e6',0.3,'Upgrade169',8,1)">
-        <div id="Upgrade169">Adds 0.3 to S Energy's energy mult strength; $e6e6</div>
+        <div id="Upgrade169">Adds 0.3 to S Energy's energy mult strength; $e6M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('8e6',0.0008,'Upgrade170',4,1)">
-        <div id="Upgrade170">+0.08 Self Money boost strength; $e8e6</div>
+        <div id="Upgrade170">+0.08 Self Money boost strength; $e8M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3e7',4.5,'Upgrade171',1,1)">
-        <div id="Upgrade171">+4.5 SLevel's MoneyMult Exponent; $e3e7</div>
+        <div id="Upgrade171">+4.5 SLevel's MoneyMult Exponent; $e30M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('4.5e7',7.5,'Upgrade172',1,1)">
-        <div id="Upgrade172">+7.5 SLevel's MoneyMult Exponent; $e4.5e7</div>
+        <div id="Upgrade172">+7.5 SLevel's MoneyMult Exponent; $e45M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('6e7','1e5000','Upgrade173',null,1)">
-        <div id="Upgrade173">x1e5000 Money; $e6e7</div>
+        <div id="Upgrade173">x1e5000 Money; $e60M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('7.5e7',1.5,'Upgrade174',3,1)">
-        <div id="Upgrade174">SLevel scales 1.5x slower; $e7.5e7</div>
+        <div id="Upgrade174">SLevel scales 1.5x slower; $e75M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e8','1e50','Upgrade175',7,1)">
-        <div id="Upgrade175">x1e50 S Energy; $e1e8</div>
+        <div id="Upgrade175">x1e50 S Energy; $e100M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1.4e8',0.0002,'Upgrade176',4,1)">
-        <div id="Upgrade176">+0.02 Self Money boost strength; $e1.4e8</div>
+        <div id="Upgrade176">+0.02 Self Money boost strength; $e140M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3e8',10000,'Upgrade177',2,1)">
-        <div id="Upgrade177">Increase levels until softcap by +10000; $e3e8</div>
+        <div id="Upgrade177">Increase levels until softcap by +10000; $e300M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('5e8','1e100','Upgrade178',5,1)">
-        <div id="Upgrade178">x1e100 Energy; $e5e8</div>
+        <div id="Upgrade178">x1e100 Energy; $e500M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('6.5e8',0.04,'Upgrade179',6,1)">
-        <div id="Upgrade179">Adds 0.04 to Energy's money mult strength; $e6.5e8</div>
+        <div id="Upgrade179">Adds 0.04 to Energy's money mult strength; $e650M</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e10','1e20000','Upgrade180',null,1)">
-        <div id="Upgrade180">x1e20000 Money; $e1e10</div>
+        <div id="Upgrade180">x1e20000 Money; $e10B</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e11',15,'Upgrade181',1,1)">
-        <div id="Upgrade181">+15 SLevel's MoneyMult Exponent; $e1e11</div>
+        <div id="Upgrade181">+15 SLevel's MoneyMult Exponent; $e100B</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('2e12',0.0005,'Upgrade182',4,1)">
-        <div id="Upgrade182">+0.05 Self Money boost strength; $e2e12</div>
+        <div id="Upgrade182">+0.05 Self Money boost strength; $e2T</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('3e14',1.7,'Upgrade183',3,1)">
-        <div id="Upgrade183">SLevel scales 1.7x slower; $e3e14</div>
+        <div id="Upgrade183">SLevel scales 1.7x slower; $e300T</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('5e17',50,'Upgrade184',1,1)">
-        <div id="Upgrade184">+50 SLevel's MoneyMult Exponent; $e5e17</div>
+        <div id="Upgrade184">+50 SLevel's MoneyMult Exponent; $e500Qd</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e21',0.02,'Upgrade185',6,1)">
-        <div id="Upgrade185">Adds 0.02 to Energy's money mult strength; $e1e21</div>
+        <div id="Upgrade185">Adds 0.02 to Energy's money mult strength; $e1Sx</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e26',0.01,'Upgrade186',6,1)">
-        <div id="Upgrade186">Adds 0.01 to Energy's money mult strength; $e1e26</div>
+        <div id="Upgrade186">Adds 0.01 to Energy's money mult strength; $e100Sp</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e30',0.0001,'Upgrade187',4,1)">
-        <div id="Upgrade187">+0.01 Self Money boost strength; $e1e30</div>
+        <div id="Upgrade187">+0.01 Self Money boost strength; $e1No</div>
     </button> <br>
     <button class="Upgrade" onclick="Upgrade('1e35',1e10,'Upgrade188',2,1)">
         <div id="Upgrade188">Increase levels until softcap by +1e10; $e1e35</div>
@@ -639,11 +638,581 @@
     <button class="Upgrade" onclick="Upgrade('1e30000',5500,'Upgrade208',6,1)">
         <div id="Upgrade208">Adds 5500 to Energy's money mult strength; $e1e30000</div>
     </button> <br>
-    <button class="Upgrade" onclick="Upgrade('1e40000',5500,'Upgrade209',6,1)">
+    <button class="Upgrade" onclick="Upgrade('1e40000',15000,'Upgrade209',6,1)">
         <div id="Upgrade209">Adds 15000 to Energy's money mult strength; $e1e40000</div>
     </button> <br>
-    <button class="Upgrade" onclick="Upgrade('1e50000',5500,'Upgrade210',6,1)">
+    <button class="Upgrade" onclick="Upgrade('1e50000',25000,'Upgrade210',6,1)">
         <div id="Upgrade210">Adds 25000 to Energy's money mult strength; $e1e50000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e65000',75000,'Upgrade211',6,1)">
+        <div id="Upgrade211">Adds 75000 to Energy's money mult strength; $e1e65000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e100000',1,'Upgrade212',1,1)">
+        <div id="Upgrade212">Money gets raised to the 1e10th every tick (Exponent); $e1e100000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e150000',2,'Upgrade213',10,1)">
+        <div id="Upgrade213">Exponent is squared; $e1e150000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e230000',1.7,'Upgrade214',10,1)">
+        <div id="Upgrade214">Exponent is raised to the 1.7th; $e1e230000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e300000',1.5,'Upgrade215',10,1)">
+        <div id="Upgrade215">Exponent is raised to the 1.5th; $e1e300000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e500000',2.1,'Upgrade216',10,1)">
+        <div id="Upgrade216">Exponent is raised to the 2.1st; $e1e500000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1500000',2.4,'Upgrade217',10,1)">
+        <div id="Upgrade217">Exponent is raised to the 2.4th; $ee1.5M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e2500000',2.7,'Upgrade218',10,1)">
+        <div id="Upgrade218">Exponent is raised to the 2.7th; $ee2.5M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e5000000',2.7,'Upgrade219',10,1)">
+        <div id="Upgrade219">Exponent is raised to the 2.7th; $ee50M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e15000000',2.7,'Upgrade220',10,1)">
+        <div id="Upgrade220">Exponent is cubed; $ee15M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e45000000',3.4,'Upgrade221',10,1)">
+        <div id="Upgrade221">Exponent is raised to the 3.4th; $ee45M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e125000000',3.5,'Upgrade222',10,1)">
+        <div id="Upgrade222">Exponent is raised to the 3.5th; $ee125M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e500000000',3.5,'Upgrade223',10,1)">
+        <div id="Upgrade223">Exponent is raised to the 3.5th again; $ee500M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e2500000000',4,'Upgrade224',10,1)">
+        <div id="Upgrade224">Exponent is raised to the 4th; $ee2.5B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.001e10',4.2,'Upgrade225',10,2)">
+        <div id="Upgrade225">Exponent is raised to the 4.2nd; $ee10B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e10',1,'Upgrade226',10,2)">
+        <div id="Upgrade226">Exponent gets raised to a power based on Money; $ee50B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e11',4.3,'Upgrade227',10,2)">
+        <div id="Upgrade227">Exponent is raised to the 4.3rd; $ee500B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e12',0.02,'Upgrade228',11,2)">
+        <div id="Upgrade228">Adds 2 to Money's Exponent boost's strength (Default: 10); $ee1T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e12',5,'Upgrade229',10,2)">
+        <div id="Upgrade229">Exponent is raised to the 5th; $ee4T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.5e13',5.2,'Upgrade230',10,2)">
+        <div id="Upgrade230">Exponent is raised to the 5.2nd; $ee15T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e14',0.02,'Upgrade231',11,2)">
+        <div id="Upgrade231">Adds 2 to Money's Exponent boost's strength; $ee100T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e14',5,'Upgrade232',10,2)">
+        <div id="Upgrade232">Exponent is raised to the 5th; $ee200T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e15',0.02,'Upgrade233',11,2)">
+        <div id="Upgrade233">Adds 2 to Money's Exponent boost's strength; $ee1Qd</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e15',6,'Upgrade234',10,2)">
+        <div id="Upgrade234">Exponent is raised to the 6th; $ee3Qd</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e16',6.4,'Upgrade235',10,2)">
+        <div id="Upgrade235">Exponent is raised to the 6.4th; $ee30Qd</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e17',0.025,'Upgrade236',11,2)">
+        <div id="Upgrade236">Adds 2.5 to Money's Exponent boost's strength; $ee200Qd</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e18',1,'Upgrade237',10,2)">
+        <div id="Upgrade237">Unlock Ultra Levels; $ee1Qn</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e18',7,'Upgrade238',10,2)">
+        <div id="Upgrade238">Exponent is raised to the 7th; $ee3Qn</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e19',0.025,'Upgrade239',11,2)">
+        <div id="Upgrade239">Adds 2.5 to Money's Exponent boost's strength; $ee30Qn</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e20',7.3,'Upgrade240',10,2)">
+        <div id="Upgrade240">Exponent is raised to the 7.3rd; $ee400Qn</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e22',7.5,'Upgrade241',10,2)">
+        <div id="Upgrade241">Exponent is raised to the 7.5th; $ee10Sx</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e23',7.8,'Upgrade242',10,2)">
+        <div id="Upgrade242">Exponent is raised to the 7.8th; $ee300Sx</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e26',0.02,'Upgrade243',11,2)">
+        <div id="Upgrade243">Adds 2 to Money's Exponent boost's strength; $ee100Sp</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e27',8,'Upgrade244',10,2)">
+        <div id="Upgrade244">Exponent is raised to the 8th; $ee1Oc</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e29',0.02,'Upgrade245',11,2)">
+        <div id="Upgrade245">Adds 2 to Money's Exponent boost's strength; $ee250Oc</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e30',0.02,'Upgrade246',11,2)">
+        <div id="Upgrade246">Adds 2 to Money's Exponent boost's strength; $ee2.5No</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('6e32',9,'Upgrade247',10,2)">
+        <div id="Upgrade247">Exponent is raised to the 9th; $ee600No</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e34',10,'Upgrade248',10,2)">
+        <div id="Upgrade248">Exponent is raised to the 10th; $ee5e34</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e37',0.025,'Upgrade249',11,2)">
+        <div id="Upgrade249">Adds 2.5 to Money's Exponent boost's strength; $ee3e37</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e40',10,'Upgrade250',10,2)">
+        <div id="Upgrade250">Exponent is raised to the 10th; $ee1e40</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e42',0.02,'Upgrade251',11,2)">
+        <div id="Upgrade251">Adds 2 to Money's Exponent boost's strength; $ee2.5e42</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e45',10,'Upgrade252',10,2)">
+        <div id="Upgrade252">Exponent is raised to the 10th; $ee1e45</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e47',0.02,'Upgrade253',11,2)">
+        <div id="Upgrade253">Adds 2 to Money's Exponent boost's strength; $ee2.5e47</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e50',0.02,'Upgrade254',11,2)">
+        <div id="Upgrade254">Adds 2 to Money's Exponent boost's strength; $ee5e50</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e53',12,'Upgrade255',10,2)">
+        <div id="Upgrade255">Exponent is raised to the 12th; $ee1e53</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e57',13,'Upgrade256',10,2)">
+        <div id="Upgrade256">Exponent is raised to the 13th; $ee1e57</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e60',15,'Upgrade257',10,2)">
+        <div id="Upgrade257">Exponent is raised to the 15th; $ee5e60</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e64',0.015,'Upgrade258',11,2)">
+        <div id="Upgrade258">Adds 1.5 to Money's Exponent boost's strength; $ee3e64</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e67',17,'Upgrade259',10,2)">
+        <div id="Upgrade259">Exponent is raised to the 17th; $ee4e67</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e72',0.015,'Upgrade260',11,2)">
+        <div id="Upgrade260">Adds 1.5 to Money's Exponent boost's strength; $ee1e72</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e75',0.015,'Upgrade261',11,2)">
+        <div id="Upgrade261">Adds 1.5 to Money's Exponent boost's strength; $ee1e75</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e79',0.017,'Upgrade262',11,2)">
+        <div id="Upgrade262">Adds 1.7 to Money's Exponent boost's strength; $ee1e79</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e84',0.018,'Upgrade263',11,2)">
+        <div id="Upgrade263">Adds 1.8 to Money's Exponent boost's strength; $ee1e84</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e90',0.0175,'Upgrade264',11,2)">
+        <div id="Upgrade264">Adds 1.75 to Money's Exponent boost's strength; $ee1e90</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e100',0.018,'Upgrade265',11,2)">
+        <div id="Upgrade265">Adds 1.8 to Money's Exponent boost's strength; $ee1e100</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e108',0.016,'Upgrade266',11,2)">
+        <div id="Upgrade266">Adds 1.6 to Money's Exponent boost's strength; $ee1e108</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e117',0.0175,'Upgrade267',11,2)">
+        <div id="Upgrade267">Adds 1.75 to Money's Exponent boost's strength; $ee1e117</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e128',0.015,'Upgrade268',11,2)">
+        <div id="Upgrade268">Adds 1.5 to Money's Exponent boost's strength; $ee1e128</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e142',0.018,'Upgrade269',11,2)">
+        <div id="Upgrade269">Adds 1.8 to Money's Exponent boost's strength; $ee1e142</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e158',0.015,'Upgrade270',11,2)">
+        <div id="Upgrade270">Adds 1.5 to Money's Exponent boost's strength; $ee1e158</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e182',0.013,'Upgrade271',11,2)">
+        <div id="Upgrade271">Adds 1.3 to Money's Exponent boost's strength; $ee1e182</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e200',0.0125,'Upgrade272',11,2)">
+        <div id="Upgrade272">Adds 1.25 to Money's Exponent boost's strength; $ee1e200</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e232',0.012,'Upgrade273',11,2)">
+        <div id="Upgrade273">Adds 1.2 to Money's Exponent boost's strength; $ee1e232</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e267',0.01,'Upgrade274',11,2)">
+        <div id="Upgrade274">Adds 1 to Money's Exponent boost's strength; $ee1e267</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.79e308',0.008,'Upgrade275',11,2)">
+        <div id="Upgrade275">Adds 0.8 to Money's Exponent boost's strength; $ee1.79e308</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e346',0.0065,'Upgrade276',11,2)">
+        <div id="Upgrade276">Adds 0.65 to Money's Exponent boost's strength; $ee1e346</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e390',0.006,'Upgrade277',11,2)">
+        <div id="Upgrade277">Adds 0.6 to Money's Exponent boost's strength; $ee1e390</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e436',0.005,'Upgrade278',11,2)">
+        <div id="Upgrade278">Adds 0.5 to Money's Exponent boost's strength; $ee1e436</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e490',1000,'Upgrade279',10,2)">
+        <div id="Upgrade279">Exponent is raised to the 1000th; $ee1e490</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e560',0.0035,'Upgrade280',11,2)">
+        <div id="Upgrade280">Adds 0.35 to Money's Exponent boost's strength; $ee1e560</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e610',0.004,'Upgrade281',11,2)">
+        <div id="Upgrade281">Adds 0.4 to Money's Exponent boost's strength; $ee1e610</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e690',0.003,'Upgrade282',11,2)">
+        <div id="Upgrade282">Adds 0.3 to Money's Exponent boost's strength; $ee1e690</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e750',0.0025,'Upgrade283',11,2)">
+        <div id="Upgrade283">Adds 0.25 to Money's Exponent boost's strength; $ee1e750</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e800',0.003,'Upgrade284',11,2)">
+        <div id="Upgrade284">Adds 0.3 to Money's Exponent boost's strength; $ee1e800</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e900',0.002,'Upgrade285',11,2)">
+        <div id="Upgrade285">Adds 0.2 to Money's Exponent boost's strength; $ee1e900</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1000',0.0025,'Upgrade286',11,2)">
+        <div id="Upgrade286">Adds 0.25 to Money's Exponent boost's strength; $ee1e1000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1100',0.002,'Upgrade287',11,2)">
+        <div id="Upgrade287">Adds 0.2 to Money's Exponent boost's strength; $ee1e1100</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1200',0.003,'Upgrade288',11,2)">
+        <div id="Upgrade288">Adds 0.3 to Money's Exponent boost's strength; $ee1e1200</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1415',0.0027,'Upgrade289',11,2)">
+        <div id="Upgrade289">Adds 0.27 to Money's Exponent boost's strength; $ee1e1415</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e1700',0.003,'Upgrade290',11,2)">
+        <div id="Upgrade290">Adds 0.3 to Money's Exponent boost's strength; $ee1e1700</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e2100',0.0025,'Upgrade291',11,2)">
+        <div id="Upgrade291">Adds 0.25 to Money's Exponent boost's strength; $ee1e2100</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e2800',0.0023,'Upgrade292',11,2)">
+        <div id="Upgrade292">Adds 0.23 to Money's Exponent boost's strength; $ee1e2800</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e3900',0.0021,'Upgrade293',11,2)">
+        <div id="Upgrade293">Adds 0.21 to Money's Exponent boost's strength; $ee1e3900</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e6200',0.001,'Upgrade294',11,2)">
+        <div id="Upgrade294">Adds 0.1 to Money's Exponent boost's strength; $ee1e6200</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e8600',0.0007,'Upgrade295',11,2)">
+        <div id="Upgrade295">Adds 0.07 to Money's Exponent boost's strength; $ee1e8600</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e12000',0.0005,'Upgrade296',11,2)">
+        <div id="Upgrade296">Adds 0.05 to Money's Exponent boost's strength; $ee1e12000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e16000',0.00035,'Upgrade297',11,2)">
+        <div id="Upgrade297">Adds 0.035 to Money's Exponent boost's strength; $ee1e16000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e21500',0.0001,'Upgrade298',11,2)">
+        <div id="Upgrade298">Adds 0.01 to Money's Exponent boost's strength; $ee1e21500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e23500',0.00007,'Upgrade299',11,2)">
+        <div id="Upgrade299">Adds 0.007 to Money's Exponent boost's strength; $ee1e23500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e25500',0.00005,'Upgrade300',11,2)">
+        <div id="Upgrade300">Adds 0.005 to Money's Exponent boost's strength; $ee1e25500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e27000',0.0001,'Upgrade301',11,2)">
+        <div id="Upgrade301">Adds 0.01 to Money's Exponent boost's strength; $ee1e27000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e31000',0.00008,'Upgrade302',11,2)">
+        <div id="Upgrade302">Adds 0.008 to Money's Exponent boost's strength; $ee1e31000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e35000',0.00006,'Upgrade303',11,2)">
+        <div id="Upgrade303">Adds 0.006 to Money's Exponent boost's strength; $ee1e35000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e38000',0.0001,'Upgrade304',11,2)">
+        <div id="Upgrade304">Adds 0.01 to Money's Exponent boost's strength; $ee1e38000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e46500',0.00005,'Upgrade305',11,2)">
+        <div id="Upgrade305">Adds 0.005 to Money's Exponent boost's strength; $ee1e46500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e52500',0.0001,'Upgrade306',11,2)">
+        <div id="Upgrade306">Adds 0.01 to Money's Exponent boost's strength; $ee1e52500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e67000',0.00012,'Upgrade307',11,2)">
+        <div id="Upgrade307">Adds 0.012 to Money's Exponent boost's strength; $ee1e67000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e110000',0.00013,'Upgrade308',11,2)">
+        <div id="Upgrade308">Adds 0.013 to Money's Exponent boost's strength; $ee1e110000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e250000',0.00011,'Upgrade309',11,2)">
+        <div id="Upgrade309">Adds 0.011 to Money's Exponent boost's strength; $ee1e250000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e650000',0.00009,'Upgrade310',11,2)">
+        <div id="Upgrade310">Adds 0.009 to Money's Exponent boost's strength; $ee1e650000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e6',0.00012,'Upgrade311',11,3)">
+        <div id="Upgrade311">Adds 0.012 to Money's Exponent boost's strength; $eee2M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e7',0.00015,'Upgrade312',11,3)">
+        <div id="Upgrade312">Adds 0.015 to Money's Exponent boost's strength; $eee10M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e8',0.00007,'Upgrade313',11,3)">
+        <div id="Upgrade313">Adds 0.007 to Money's Exponent boost's strength; $eee100M</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e9',0.0001,'Upgrade314',11,3)">
+        <div id="Upgrade314">Adds 0.01 to Money's Exponent boost's strength; $eee1B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e10',0.00012,'Upgrade315',11,3)">
+        <div id="Upgrade315">Adds 0.012 to Money's Exponent boost's strength; $eee30B</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e12',0.00014,'Upgrade316',11,3)">
+        <div id="Upgrade316">Adds 0.014 to Money's Exponent boost's strength; $eee1T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e14',0.00005,'Upgrade317',11,3)">
+        <div id="Upgrade317">Adds 0.005 to Money's Exponent boost's strength; $eee100T</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e17',0.00025,'Upgrade318',11,3)">
+        <div id="Upgrade318">Adds 0.025 to Money's Exponent boost's strength; $eee100Qd</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e20',0.00035,'Upgrade319',11,3)">
+        <div id="Upgrade319">Adds 0.035 to Money's Exponent boost's strength; $eee100Qn</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e23',0.0005,'Upgrade320',11,3)">
+        <div id="Upgrade320">Adds 0.05 to Money's Exponent boost's strength; $eee1e100Sx</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e27',0.001,'Upgrade321',11,3)">
+        <div id="Upgrade321">Adds 0.1 to Money's Exponent boost's strength; $eee1e1Oc</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e32',0.0025,'Upgrade322',11,3)">
+        <div id="Upgrade322">Adds 0.25 to Money's Exponent boost's strength; $eee1e100No</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e36',0.01,'Upgrade323',11,3)">
+        <div id="Upgrade323">Adds 1 to Money's Exponent boost's strength; $eee1e36</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e50',0.02,'Upgrade324',11,3)">
+        <div id="Upgrade324">Adds 2 to Money's Exponent boost's strength; $eee1e50</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e100',0.06,'Upgrade325',11,3)">
+        <div id="Upgrade325">Adds 6 to Money's Exponent boost's strength; $eee1e100</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e300',0.2,'Upgrade326',11,3)">
+        <div id="Upgrade326">Adds 20 to Money's Exponent boost's strength; $eee1e300</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e900',0.75,'Upgrade327',11,3)">
+        <div id="Upgrade327">Adds 75 to Money's Exponent boost's strength; $eee1e900</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e2500',2.5,'Upgrade328',11,3)">
+        <div id="Upgrade328">Adds 250 to Money's Exponent boost's strength; $eee1e2500</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e6000',10,'Upgrade329',11,3)">
+        <div id="Upgrade329">Adds 1000 to Money's Exponent boost's strength; $eee1e6000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e20000',30,'Upgrade330',11,3)">
+        <div id="Upgrade330">Adds 3000 to Money's Exponent boost's strength; $eee1e20000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e50000',30,'Upgrade331',11,3)">
+        <div id="Upgrade331">Money boosts Money's Exponent boost's strength (Let's call this T); $eee1e50000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e70000',0.6,'Upgrade332',12,3)">
+        <div id="Upgrade332">Adds 6 to T's Strength (Default: 10); $eee1e70000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e130000',250,'Upgrade333',11,3)">
+        <div id="Upgrade333">Adds 25000 to Money's Exponent boost's strength; $eee1e130000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e300000',1250,'Upgrade334',11,3)">
+        <div id="Upgrade334">Adds 125000 to Money's Exponent boost's strength; $eee1e300000</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e6',4250,'Upgrade335',11,4)">
+        <div id="Upgrade335">Adds 425000 to Money's Exponent boost's strength; $1M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e6',2e4,'Upgrade336',11,4)">
+        <div id="Upgrade336">Adds 2M to Money's Exponent boost's strength; $2M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e6',2e7,'Upgrade337',11,4)">
+        <div id="Upgrade337">Adds 20M to Money's Exponent boost's strength; $3M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e6',1e10,'Upgrade338',11,4)">
+        <div id="Upgrade338">Adds 1T to Money's Exponent boost's strength; $5M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('8e6',2,'Upgrade339',13,4)">
+        <div id="Upgrade339">Square Money's Exponent boost's strength; $8M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('14e6',2,'Upgrade340',13,4)">
+        <div id="Upgrade340">Square Money's Exponent boost's strength again; $14M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('25e6',2.2,'Upgrade341',13,4)">
+        <div id="Upgrade341">^2.2 Money's Exponent boost's strength; $25M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('69e6',2.5,'Upgrade342',13,4)">
+        <div id="Upgrade342">^2.5 Money's Exponent boost's strength; $69M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('150e6',2.8,'Upgrade343',13,4)">
+        <div id="Upgrade343">^2.8 Money's Exponent boost's strength; $150M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('250e6',3,'Upgrade344',13,4)">
+        <div id="Upgrade344">Cube Money's Exponent boost's strength; $250M#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e9',3.2,'Upgrade345',13,4)">
+        <div id="Upgrade345">^3.2 Money's Exponent boost's strength; $1BM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e9',0.4,'Upgrade346',12,4)">
+        <div id="Upgrade346">Adds 4 to T's Strength; $3B#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('13e9',3.5,'Upgrade347',13,4)">
+        <div id="Upgrade347">^3.5 Money's Exponent boost's strength; $13BM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('50e9',0.3,'Upgrade348',12,4)">
+        <div id="Upgrade348">Adds 3 to T's Strength; $50B#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('175e9',4,'Upgrade349',13,4)">
+        <div id="Upgrade349">^4 Money's Exponent boost's strength; $175BM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('690e9',4.2,'Upgrade350',13,4)">
+        <div id="Upgrade350">^4.2 Money's Exponent boost's strength; $690BM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e12',0.3,'Upgrade351',12,4)">
+        <div id="Upgrade351">Adds 3 to T's Strength again; $3T#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('11e12',0.2,'Upgrade352',12,4)">
+        <div id="Upgrade352">Adds 2 to T's Strength; $11T#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('25e12',5,'Upgrade353',13,4)">
+        <div id="Upgrade353">^5 Money's Exponent boost's strength; $25TM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('169e12',5.4,'Upgrade354',13,4)">
+        <div id="Upgrade354">^5.4 Money's Exponent boost's strength; $169TM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e15',6,'Upgrade355',13,4)">
+        <div id="Upgrade355">^6 Money's Exponent boost's strength; $1QdM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e15',5,'Upgrade356',13,4)">
+        <div id="Upgrade356">^5 Money's Exponent boost's strength; $5QdM#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('25e15',0.15,'Upgrade357',12,4)">
+        <div id="Upgrade357">Adds 1.5 to T's Strength; $25Qd#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('60e15',7,'Upgrade358',13,4)">
+        <div id="Upgrade358">^7 Money's Exponent boost's strength; $60Qd#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('500e15',6,'Upgrade359',13,4)">
+        <div id="Upgrade359">^6 Money's Exponent boost's strength; $500Qd#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e18',6,'Upgrade360',13,4)">
+        <div id="Upgrade360">^9 Money's Exponent boost's strength (Lets call this G from now on); $4Qn#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('30e18',1,'Upgrade361',13,4)">
+        <div id="Upgrade361">Unlock Mega Levels; $30Qn#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('100e18',0.2,'Upgrade362',12,4)">
+        <div id="Upgrade362">Adds 2 to T's Strength; $100Qn#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('300e18',7,'Upgrade363',13,4)">
+        <div id="Upgrade363">^7 G; $300Qn#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2.5e21',0.5,'Upgrade364',14,4)">
+        <div id="Upgrade364">+0.5 G mult every ML; $2.5Sx#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('7e21',10,'Upgrade365',13,4)">
+        <div id="Upgrade365">^10 G; $7Sx#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('300e21',12,'Upgrade366',13,4)">
+        <div id="Upgrade366">^12 G; $300Sx#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('10e24',0.5,'Upgrade367',14,4)">
+        <div id="Upgrade367">+0.5 G mult every ML; $10Sp#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('400e24',0.1,'Upgrade368',12,4)">
+        <div id="Upgrade368">Adds 1 to T's Strength; $400Sp#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1.25e27',13,'Upgrade369',13,4)">
+        <div id="Upgrade369">^13 G; $1.25Oc#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('50e27',0.1,'Upgrade370',12,4)">
+        <div id="Upgrade370">Adds 1 to T's Strength; $50Oc#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('200e27',0.6,'Upgrade371',14,4)">
+        <div id="Upgrade371">+0.6 G mult every ML; $200Oc#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e30',10,'Upgrade372',13,4)">
+        <div id="Upgrade372">^10 G; $1No#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('35e30',15,'Upgrade373',13,4)">
+        <div id="Upgrade373">^15 G; $35No#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e34',0.15,'Upgrade374',12,4)">
+        <div id="Upgrade374">Adds 1.5 to T's Strength; $1e34#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('4e34',0.4,'Upgrade375',14,4)">
+        <div id="Upgrade375">+0.4 G mult every ML; $4e34#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e35',12,'Upgrade376',13,4)">
+        <div id="Upgrade376">^12 G; $2e35#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e37',11,'Upgrade377',13,4)">
+        <div id="Upgrade377">^11 G; $1e37#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e38',17,'Upgrade378',13,4)">
+        <div id="Upgrade378">^17 G; $3e38#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e40',0.14,'Upgrade379',12,4)">
+        <div id="Upgrade379">Adds 1.4 to T's Strength; $3e40#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e41',0.25,'Upgrade380',12,4)">
+        <div id="Upgrade380">Adds 2.5 to T's Strength; $2e41#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e42',0.3,'Upgrade381',14,4)">
+        <div id="Upgrade381">+0.3 G mult every ML; $2e42#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e44',0.4,'Upgrade382',12,4)">
+        <div id="Upgrade382">Adds 4 to T's Strength; $1e44#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e44',20,'Upgrade383',13,4)">
+        <div id="Upgrade383">^20 G; $3e44#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e46',0.45,'Upgrade384',14,4)">
+        <div id="Upgrade384">+0.45 G mult every ML; $1e46#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e48',20,'Upgrade385',13,4)">
+        <div id="Upgrade385">^20 G; $1e48#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e49',25,'Upgrade386',13,4)">
+        <div id="Upgrade386">^25 G; $1e49#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e51',0.5,'Upgrade387',14,4)">
+        <div id="Upgrade387">+0.5 G mult every ML; $1e51#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e53',0.5,'Upgrade388',12,4)">
+        <div id="Upgrade388">Adds 5 to T's Strength; $1e53#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e54',0.4,'Upgrade389',12,4)">
+        <div id="Upgrade389">Adds 4 to T's Strength; $1e54#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e56',0.6,'Upgrade390',14,4)">
+        <div id="Upgrade390">+0.6 G mult every ML; $1e56#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e57',30,'Upgrade391',13,4)">
+        <div id="Upgrade391">^30 G; $1e57#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e59',0.45,'Upgrade392',12,4)">
+        <div id="Upgrade392">Adds 4.5 to T's Strength; $5e59#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e61',33,'Upgrade393',13,4)">
+        <div id="Upgrade393">^33 G; $1e61#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('5e62',37,'Upgrade394',13,4)">
+        <div id="Upgrade394">^37 G; $5e62#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e65',0.7,'Upgrade395',14,4)">
+        <div id="Upgrade395">+0.7 G mult every ML; $1e65#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e67',0.5,'Upgrade396',12,4)">
+        <div id="Upgrade396">Adds 5 to T's Strength; $1e67#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('3e68',1,'Upgrade397',14,4)">
+        <div id="Upgrade397">+1 G mult every ML; $3e68#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('2e70',0.75,'Upgrade398',14,4)">
+        <div id="Upgrade398">+0.75 G mult every ML; $2e70#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e72',40,'Upgrade399',13,4)">
+        <div id="Upgrade399">^40 G; $1e72#5</div>
+    </button> <br>
+    <button class="Upgrade" onclick="Upgrade('1e75',50,'Upgrade400',13,4)">
+        <div id="Upgrade400">^50 G; $1e75#5</div>
     </button> <br>
     <script src="break_eternity.js-master/break_eternity.js"></script>
     <script src="main.js"></script>

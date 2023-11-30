@@ -1,4 +1,4 @@
-let UpgradeAmt = 382;
+let UpgradeAmt = 399;
 let Abbreviations = ["k","M","B","T","Qd","Qn","Sx","Sp","Oc","No"];
 let Money = new Decimal('0');
 let TotalMoney = new Decimal('0')

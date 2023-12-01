@@ -220,7 +220,7 @@ function AddClicks() {
     } else {
         SEnergyEBoost = 1;
     }
-    if (document.getElementById('Upgrade226').textContent !== "Exponent gets raised to a power based on Money; ee5e10" && Money.gte("1e2000")) {
+    if (document.getElementById('Upgrade226').textContent !== "Exponent gets raised to a power based on Money; ee50B" && Money.gte("1e2000")) {
         MonExponentBoost = (pow10(Money.times(1),-2)).pow(MonExponentExpo.pow(MoneyMoneyExpoExpo).pow(MonExponentExpo2).pow(MLExpoMult))
         CalculateExponent();
         document.getElementById('Upgrade226').textContent = "Currently: ^" + Format(MonExponentBoost);
